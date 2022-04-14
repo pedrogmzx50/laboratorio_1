@@ -13,44 +13,18 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-	     //CarroBase carro = new CarroBase(); //composition
-	     //carro.imprimirCategoria();
-		 //System.out.println("*****hello world 2*****");
+	 
 	       
 		MotorGasolina motorGasolina = new MotorGasolina();//composicion
+		MotorDiesel motorDiesel = new MotorDiesel();
 		
-		//inyectando una instancia de motor gasolina al carro sedan
-		//esto lo permite el polimorfismo
-		CarroBase carro = new Sedan(motorGasolina);//polimorfismo
-		carro.imprimirCategoria();
+		Sedan carro1 = new Sedan(motorDiesel);//polimorfismo
+		Pickup carro2 = new Pickup(motorGasolina);
+		Crossover carro3 = new Crossover(motorGasolina);
 		
-		
-		
-		
-		
-		
-		
-		/*MotorDiesel motorDiesel = new MotorDiesel();
-		carro = new Sedan(motorDiesel);//polimorfismo
-		carro.imprimirCategoria();
-		
-		
-		carro = new Pickup(motorGasolina);
-		carro.imprimirCategoria();
-		
-		carro = new Pickup(motorDiesel);
-		carro.imprimirCategoria();
-		
-		
-		carro = new Suv(motorDiesel);
-		carro.imprimirCategoria();
-		
-		carro = new Suv(motorGasolina);
-		carro.imprimirCategoria();
-		*/
-		
-		
-		
+		carro1.imprimirCategoria();
+		carro2.imprimirCategoria();
+		carro3.imprimirCategoria();
 	}
 	
 }
