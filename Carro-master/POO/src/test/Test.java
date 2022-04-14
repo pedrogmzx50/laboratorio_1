@@ -13,7 +13,7 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-	 
+	 //Trabajo de Alondra y Pedro
 	       
 		MotorGasolina motorGasolina = new MotorGasolina();//composicion
 		MotorDiesel motorDiesel = new MotorDiesel();
