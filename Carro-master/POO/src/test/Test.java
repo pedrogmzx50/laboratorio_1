@@ -6,6 +6,7 @@ import carros.Sedan;
 import carros.Suv;
 import motores.MotorDiesel;
 import motores.MotorGasolina;
+import carros.Crossover;
 
 public class Test {
 	

@@ -4,7 +4,7 @@ public class Crossover extends CarroBase{
 	
 	public Crossover(Motor motor)
 	{
-		super(motor)
+		super(motor);
 	}
 	
 	@Override  //sobreescritura de metodos
